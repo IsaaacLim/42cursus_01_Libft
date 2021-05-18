@@ -4,25 +4,26 @@ SRCS	=	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 			ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c \
 			ft_strdup.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c \
 			ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c
+
 CC		=	gcc
-CFLAGS	=	-c -Wall -Wextra -Werror
-OBJ		= 	$(SRCS:.c=.o)
 
-# target: prerequisite
-# 		command
+CFLAGS	=	-c -Wall -Wextra -Werror -I
 
-#Execution order from top to bottom
+OBJS		= 	$(SRCS:.c=.o)
 
-all: hello
+NAME	=	libft.a
 
-hello: $(OBJ)
-	$(CC) $(OBJ) -o hello
+all:	$(NAME) 
 
-ft_atoi.o: ft_atoi.c
-	$(CC) $(CFLAGS) ft_atoi.c
-
-ft_bzero.o: ft_bzero.c
-	$(CC) $(CFLAGS) ft_bzero.c
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -rf *.o hello
+	rm -rf $(OBJS)
+
+fclean: clean
+	rm -rf $(NAME)
+
+re: fclean all
+
+.PHONY:		all clean fclean re
