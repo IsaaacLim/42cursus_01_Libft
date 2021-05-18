@@ -15,7 +15,7 @@ int	main(void)
 	}
 
 	printf("\n%d: %c\n\n", i-1, (char) i-1);
-	while (i <= 122)
+	while (i <= 126)
 	{
 		printf("%d ", isprint((char)i));
 		i++;
@@ -36,7 +36,7 @@ int	main(void)
 		i++;
 	}
 	printf("\n%d: %c\n\n", i-1, (char) i-1);
-	while (i <= 122)
+	while (i <= 126)
 	{
 		printf("%d ", ft_isprint((char)i));
 		i++;
