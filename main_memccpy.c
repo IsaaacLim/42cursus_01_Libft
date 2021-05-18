@@ -16,15 +16,15 @@ int	main(int argc, char **argv)
 
 	if (argc == 2)
 	{
-		printf("%s - %s - %s\n", memccpy(dst, src, 'p', 5), dst, src);
-		printf("%s - %s - %s\n", memccpy(dst2, src2, 'e', 5), dst2, src2);
-		printf("%s - %s - %s\n", memccpy(dst3, src3, '\0', 5), dst3, src3);
+		printf("%p - %s - %s\n", memccpy(dst, src, 'p', 5), dst, src);
+		printf("%p - %s - %s\n", memccpy(dst2, src2, 'e', 5), dst2, src2);
+		printf("%p - %s - %s\n", memccpy(dst3, src3, '\0', 5), dst3, src3);
 	}
 	else
 	{
-		printf("%s - %s - %s\n", ft_memccpy(dst, src, 'p', 5), dst, src);
-		printf("%s - %s - %s\n", ft_memccpy(dst2, src2, 'e', 5), dst2, src2);
-		printf("%s - %s - %s\n", ft_memccpy(dst3, src3, '\0', 5), dst3, src3);
+		printf("%p - %s - %s\n", ft_memccpy(dst, src, 'p', 5), dst, src);
+		printf("%p - %s - %s\n", ft_memccpy(dst2, src2, 'e', 5), dst2, src2);
+		printf("%p - %s - %s\n", ft_memccpy(dst3, src3, '\0', 5), dst3, src3);
 	}
 	
 }
