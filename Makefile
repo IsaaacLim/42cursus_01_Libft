@@ -8,21 +8,21 @@ CC		=	gcc
 
 CFLAGS	=	-c -Wall -Wextra -Werror -I
 
-OBJS		= 	$(SRCS:.c=.o)
+OBJS	= 	$(SRCS:.c=.o)
 
 NAME	=	libft.a
 
-all:	$(NAME) 
+all:		$(NAME) 
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME):	$(OBJS)
+		ar rcs $(NAME) $(OBJS)
 
 clean:
 	rm -rf $(OBJS)
 
-fclean: clean
+fclean:		clean
 	rm -rf $(NAME)
 
-re: fclean all
+re:			fclean all
 
 .PHONY:		all clean fclean re

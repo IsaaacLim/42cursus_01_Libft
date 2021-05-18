@@ -2,5 +2,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	return (malloc(count * size));
+	void *mal;
+
+	mal = (void*)malloc(count * size);
+	if(!mal)
+		return (NULL);
+	ft_bzero(mal, count);
+	return (mal);
 }
