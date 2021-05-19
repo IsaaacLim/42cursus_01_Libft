@@ -4,11 +4,9 @@
 int word_count(char const *s, char c)
 {
 	int	i;
-	int	offset;
 	int	word_count;
 
 	i = 0;
-	offset = 0;
 	if (s[i] != c && s[i] != '\0')
 		word_count = 1;
 	else
@@ -20,6 +18,7 @@ int word_count(char const *s, char c)
 		i++;
 	}
 	printf("i:%d - %d\n", i, word_count);
+	return (word_count);
 }
 
 //change function
