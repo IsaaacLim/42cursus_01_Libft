@@ -10,4 +10,5 @@ int	main(void)
 	{
 		printf("%s\n", res[i]);
 	}
+	free(res);
 }
