@@ -1,16 +1,19 @@
 #include "libft.h"
+#include <stdio.h> //remove
 
-int		int_len(int n)
+int	int_len(int n)
 {
 	int	len;
-	
+
 	len = 0;
 	if (n < 0)
 	{
 		len += 1;
 		n *= -1;
 	}
-	while (n >= 0)
+	if (n == 0)
+		len += 1;
+	while (n)
 	{
 		n /= 10;
 		len++;
@@ -37,7 +40,9 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		n *= -1;
 	}
-	while (n >= 0)
+	if (n == 0)
+		str[0] = '0';
+	while (n)
 	{
 		str[ilen-- -1] = n % 10 + '0';
 		n /= 10;
