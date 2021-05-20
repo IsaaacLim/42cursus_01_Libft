@@ -8,7 +8,7 @@ void	ft_putnbr_fd(int n, int fd)
 		if (n == -2147483648)
 		{
 			ft_putchar_fd('2', fd);
-			ft_putnbr_fd(147483648);
+			ft_putnbr_fd(147483648, fd);
 			return ;
 		}
 		n *= -1;
