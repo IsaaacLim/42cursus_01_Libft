@@ -7,3 +7,5 @@ ft_split.c - should work fine. Reduce function length
 ft_itoa.c - done
 ft_strmapi.c - norm
 ft_putchar_fd - check norm
+ft_putstr_fd - check norm
+ft_putendl_fd - check norm , check answer
