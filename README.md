@@ -9,3 +9,4 @@ ft_strmapi.c - norm
 ft_putchar_fd - check norm
 ft_putstr_fd - check norm
 ft_putendl_fd - check norm , check answer
+ft_putnbr_fd - check norm, check answer
