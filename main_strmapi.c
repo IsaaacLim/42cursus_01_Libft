@@ -4,7 +4,7 @@
 
 char	capitalize_odd(unsigned int i, char c)
 {
-	if (i % 2 == 0)
+	if (i % 2 == 1)
 	{
 		if (c >= 'a' && c <= 'z')
 		{
@@ -16,7 +16,7 @@ char	capitalize_odd(unsigned int i, char c)
 
 int	main(void)
 {
-	char	*s1 = "Hello";
+	char	*s1 = "hello";
 	char	*res = ft_strmapi(s1, &capitalize_odd);
 
 	for (int i = 0; i < 6; i++)
