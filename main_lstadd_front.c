@@ -13,10 +13,10 @@ int	main(void)
 
 	ft_lstadd_front(&root, new);
 	ft_lstadd_front(&root, lastest);
-	while(lastest != NULL)
+	while(root != NULL)
 	{
-		printf("%s\n", (char *)lastest->content);
-		lastest = lastest -> next;
+		printf("%s\n", (char *)root->content);
+		root = root -> next;
 	}
 	free(new);
 	free(root);
