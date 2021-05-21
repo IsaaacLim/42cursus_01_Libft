@@ -45,7 +45,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-void	*ft_lstadd_front(t_list	**lst, t_list *new);
+void	ft_lstadd_front(t_list	**lst, t_list *new);
 t_list	*ft_lstnew(void *content);
 
 #endif
