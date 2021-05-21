@@ -12,3 +12,4 @@ ft_putendl_fd - check norm , check answer
 ft_putnbr_fd - check norm, check answer
 
 ft_lstnew - not sure how to test
+ft_lstlast.c - test case not working
