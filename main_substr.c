@@ -5,7 +5,7 @@
 int	main(void)
 {
 	char	*s1 = "Hello, World";
-	char	*res = ft_substr(s1, 7, 4);
+	char	*res = ft_substr(s1, 20, 4);
 
 	for (int i = 0; i < 5; i++)
 		printf("%c", res[i]);

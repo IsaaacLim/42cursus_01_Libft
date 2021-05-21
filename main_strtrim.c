@@ -5,7 +5,7 @@
 int	main(void)
 {
 	char	*res = ft_strtrim("abcHello Worldabc", "abc");
-	char	*res2 = ft_strtrim("Hello World", " ");
+	char	*res2 = ft_strtrim(" \t \t \n   \n\n\n\t", " \n\t");
 
 	printf("%s\n", res);
 	printf("%s\n", res2);

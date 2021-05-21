@@ -6,9 +6,15 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     size_t          strlen;
     unsigned int    i;
 
-    strlen = ft_strlen(s);
-    if (!*s || start >= (unsigned int)strlen)
+    if (!*s)
         return (NULL);
+    strlen = ft_strlen(s);
+    if (start >= strlen)
+    {
+        str = (char *)malloc(sizeof(char) * 1);
+        str[0] = '\0';
+        return  (str);
+    }
     if (len > strlen - start)
         len = strlen - start;
     str = (char *)malloc(sizeof(char) * (len + 1));
