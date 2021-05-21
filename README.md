@@ -1,6 +1,6 @@
 Notes:
 
-ft_substr.c - Borm edit (tab -> space)
+ft_substr.c - Norm edit (tab -> space). Run test on new protection line added
 ft_strjoin.c - check last charachter if it displays NULL in Guac & last line
 ft_strtrm.c - Last line
 ft_split.c - should work fine. Reduce function length
