@@ -21,17 +21,17 @@ int	main(void)
 	t_list *root2;
 	root2 = root -> next;
 
-	ft_lstdelone(root, *del);
+	ft_lstdelone(root, &del);
 	/*if(!(root->content))
 		printf("First element deleted\n");
 	else
 		printf("First element still there: %s\n", (char *)root ->content);
 */
-	while(root2)
-	{
-		printf("%s ", (char *)root2->content);
-		root2 = root2 -> next;
-	}
+	//while(root2)
+	//{
+	//	printf("%s ", (char *)root2->content);
+	//	root2 = root2 -> next;
+	//}
 	free(root);
 	free(second);
 	free(third);
