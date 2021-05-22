@@ -13,3 +13,4 @@ ft_putnbr_fd - check norm, check answer
 
 ft_lstnew - not sure how to test
 ft_lstlast.c - test now working
+ft_lstdelone.c - not sure how to create test file
