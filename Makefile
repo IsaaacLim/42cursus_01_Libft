@@ -31,7 +31,7 @@ clean:
 	rm -rf $(OBJS) $(BOBJS)
 
 fclean:		clean
-	rm -rf $(NAME) $(BONUS)
+	rm -rf $(NAME) $(BOBJS)
 
 re:			fclean all
 
