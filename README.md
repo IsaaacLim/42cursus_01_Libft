@@ -15,3 +15,7 @@ ft_lstnew - not sure how to test
 ft_lstlast.c - test now working
 ft_lstdelone.c - not sure how to create test file
 ft_lstclear.c - copy answer
+ft_lstiter.c - copy answer
+ft_lstmap. c - copy answer
+
+check function call method for delone and lstiter
