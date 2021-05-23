@@ -5,7 +5,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*d;
 	char	*s;
 
-	if (!dst)
+	if (!dst && !src)
 		return (NULL);
 	d = (char *)dst;
 	s = (char *)src;

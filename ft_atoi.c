@@ -2,9 +2,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	flag;
-	int	tot;
+	int		i;
+	int		flag;
+	long	tot;
 
 	i = 0;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
@@ -23,5 +23,5 @@ int	ft_atoi(const char *str)
 		tot = tot * 10 + (str[i] - '0');
 		i++;
 	}
-	return (tot * flag);
+	return (tot * (long)flag);
 }

@@ -27,7 +27,7 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	ilen = int_len(n);
-	str = ft_calloc(ilen + 1, 'a');
+	str = ft_calloc(ilen + 1, 1);
 	if (!str)
 		return (NULL);
 	if (n == -2147483648)

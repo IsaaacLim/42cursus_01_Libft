@@ -4,8 +4,6 @@ void	ft_bzero(void *s, size_t n)
 {
 	char	*str;
 
-	if (!s)
-		return;
 	str = (char *)s;
 	while (n > 0)
 	{

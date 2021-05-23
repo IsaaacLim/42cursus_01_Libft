@@ -5,9 +5,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 	unsigned char	*str;
 
-	if (!b)
-		return (NULL);
-	str = (unsigned char *) b;
+	str = (unsigned char *)b;
 	i = 0;
 	while (i < len)
 	{

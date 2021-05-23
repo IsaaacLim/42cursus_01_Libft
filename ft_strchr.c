@@ -2,8 +2,6 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	if (!s)
-		return (NULL);
 	while (*s != '\0' && *s != (char)c)
 		s++;
 	if (*s == (char)c)

@@ -19,18 +19,20 @@ int	word_count(char const *s, char c)
 	return (word_count);
 }
 
-char	**ft_split(char const *s, char c)
+int	free_arr(char **arr, int count)
 {
-	char	**arr;
-	char	*str;
-	int		words;
+	while (--count >= 0)
+		free(arr[count]);
+	free(arr);
+	return (0);
+}
+
+int	split_it(char const *s, char c, char **arr, int words)
+{
 	int		count;
 	int		len;
+	char	*str;
 
-	words = word_count(s, c);
-	arr = (char **)malloc(words * sizeof(char *) + 1);
-	if (!arr)
-		return (NULL);
 	count = 0;
 	while (count < words)
 	{
@@ -39,12 +41,9 @@ char	**ft_split(char const *s, char c)
 			len++;
 		if (len)
 		{
-			str = ft_calloc(len + 1, 'a');
+			str = ft_calloc(len + 1, 1);
 			if (!str)
-			{
-				free(arr);
-				return (NULL);
-			}
+				return (free_arr(arr, count));
 			arr[count] = ft_memcpy(str, s, len);
 			count++;
 			s = &s[len];
@@ -52,6 +51,22 @@ char	**ft_split(char const *s, char c)
 		while (*s == c)
 			s++;
 	}
-	arr[count] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**arr;
+	int		words;
+
+	if (!s)
+		return (NULL);
+	words = word_count(s, c);
+	arr = (char **)malloc(words * sizeof(char *) + 1);
+	if (!arr)
+		return (NULL);
+	if (!split_it(s, c, arr, words))
+		return (NULL);
+	arr[words] = NULL;
 	return (arr);
 }
