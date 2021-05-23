@@ -1,21 +1,7 @@
 Notes:
 
-ft_substr.c - Norm edit (tab -> space). Run test on new protection line added
-ft_strjoin.c - check last charachter if it displays NULL in Guac & last line
-ft_strtrm.c - Last line
-ft_split.c - should work fine. Reduce function length
-ft_itoa.c - done
-ft_strmapi.c - norm
-ft_putchar_fd - check norm
-ft_putstr_fd - check norm
-ft_putendl_fd - check norm , check answer
-ft_putnbr_fd - check norm, check answer
+Score: 103/100
 
-ft_lstnew - not sure how to test
-ft_lstlast.c - test now working
-ft_lstdelone.c - not sure how to create test file
-ft_lstclear.c - copy answer
-ft_lstiter.c - copy answer
-ft_lstmap. c - copy answer
-
-check function call method for delone and lstiter
+1. ft_substr.c failed test. Assumed it's because of "(!*s)" - Error fixed
+2. ft_substr.c also refactored codes.
+3. ft_split.c was already correct, but I added free_arr func
