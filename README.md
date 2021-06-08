@@ -1,6 +1,6 @@
-Notes:
+# Libft 🐧
 
-Score: 103/100
+Grades: 103/100
 
 1. ft_substr.c failed test. Assumed it's because of "(!*s)" - Error fixed
 2. ft_substr.c also refactored codes.
