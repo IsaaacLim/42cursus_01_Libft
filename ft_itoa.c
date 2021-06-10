@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdio.h> //remove
 
 int	int_len(int n)
 {
